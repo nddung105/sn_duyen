@@ -1,0 +1,111 @@
+<div class=" border_wrapper animated fadeIn px-3" style="padding: 0px !important;" *ngFor="let alert of alerts">
+  <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout" (onClosed)="onClosedAlert(alert)"><span
+      [innerHtml]="alert.msg"></span></alert>
+</div>
+
+<div class="content" role="main">
+  <!-- Resources -->
+  <h2>Resources</h2>
+  <p>Here are some links to help you get started:</p>
+  <div class="card-container">
+    <input type='date' [(ngModel)]='date' />
+    &nbsp;&nbsp;<button (click)="checkBirth()">Thử xem nào</button>
+  </div>
+  <div class="card-container" *ngIf='is_show'>
+    <a class="card" target="_blank" rel="noopener" (click)='clickShow()'>
+      <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg> -->
+
+      <img src='assets/gift_2.png' height="32">
+
+      <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>     -->
+    </a>
+
+    <a class="card" target="_blank" rel="noopener">
+      <img src='assets/gift_2.png' height="32">
+
+    </a>
+
+    <a class="card" target="_blank" rel="noopener">
+      <img src='assets/gift_2.png' height="32">
+
+    </a>
+  </div>
+  <div class="card-container" *ngIf='is_show'>
+    <a class="card" target="_blank" rel="noopener">
+      <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg> -->
+
+      <img src='assets/gift_2.png' height="32">
+
+      <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>     -->
+    </a>
+
+    <a class="card" target="_blank" rel="noopener">
+      <img src='assets/gift_2.png' height="32">
+
+    </a>
+
+  </div>
+  <div class="card-container" *ngIf='is_show'>
+    <a class="card" target="_blank" rel="noopener">
+      <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg> -->
+
+      <img src='assets/gift_2.png' height="32">
+
+      <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>     -->
+    </a>
+
+    <a class="card" target="_blank" rel="noopener">
+      <img src='assets/gift_2.png' height="32">
+
+    </a>
+
+    <a class="card" target="_blank" rel="noopener">
+      <img src='assets/gift_2.png' height="32">
+
+    </a>
+    <a class="card" target="_blank" rel="noopener">
+      <img src='assets/gift_2.png' height="32">
+
+    </a>
+  </div>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div bsModal #formDelete="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"></h4>
+        <button type="button" class="close" (click)="formDelete.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://drive.google.com/file/d/1WTgwmUeUdb4wSYwZ1P7l_hK-3z__MT9z/preview" width="100%"
+          height="480" allow="autoplay" allowfullscreen></iframe>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- <ng-template #template>
+    <div class="modal-header">
+       <h4 class="modal-title pull-left">Video</h4>
+       <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">×</span>
+       </button>
+    </div>
+    <div class="modal-body" width="640" height="480">
+      <iframe src="https://drive.google.com/file/d/1WTgwmUeUdb4wSYwZ1P7l_hK-3z__MT9z/preview" width="640" height="480" allow="autoplay"></iframe>
+    </div>
+    <div class="modal-footer">
+       <button type="button" class="btn btn-default" (click)="modalRef.hide()">Close</button>
+    </div>
+ </ng-template> -->
