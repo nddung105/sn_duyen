@@ -5,66 +5,66 @@
 
 <div class="content" role="main">
   <!-- Resources -->
-  <h2>Resources</h2>
-  <p>Here are some links to help you get started:</p>
+  <h1 style="font-weight: bold; color: rgb(216, 27, 27); font-family: cursive">Lê Mỹ Duyên</h1>
+  <h5 style="color: rgb(159, 161, 7); font-family: sans-serif">sweet 22 to ultraviolemon</h5>
   <div class="card-container">
-    <input type='date' [(ngModel)]='date' />
-    &nbsp;&nbsp;<button (click)="checkBirth()">Thử xem nào</button>
+    <input type='date' [(ngModel)]='date' style="font-size:18px;color: black;background: #ebedef;"/>
+    &nbsp;&nbsp;<button (click)="checkBirth()" style="font-size:18px;color: black;background: #ebedef;">Thử xem nào</button>
   </div>
   <div class="card-container" *ngIf='is_show'>
-    <a class="card" target="_blank" rel="noopener" (click)='clickShow()'>
+    <a class="card" target="_blank" rel="noopener" (click)='clickShow(0)'>
       <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg> -->
 
-      <img src='assets/gift_2.png' height="32">
+      <img src="{{is_open[0]? 'assets/open.png' :'assets/gift_2.png'}}" height="32">
 
       <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>     -->
     </a>
 
-    <a class="card" target="_blank" rel="noopener">
-      <img src='assets/gift_2.png' height="32">
+    <a class="card" target="_blank" rel="noopener"  (click)='clickShow(1)'>
+      <img src="{{is_open[1]? 'assets/open.png' :'assets/gift_2.png'}}" height="32">
 
     </a>
 
-    <a class="card" target="_blank" rel="noopener">
-      <img src='assets/gift_2.png' height="32">
+    <a class="card" target="_blank" rel="noopener"  (click)='clickShow(2)'>
+      <img src="{{is_open[2]? 'assets/open.png' :'assets/gift_2.png'}}" height="32">
 
     </a>
   </div>
   <div class="card-container" *ngIf='is_show'>
-    <a class="card" target="_blank" rel="noopener">
+    <a class="card" target="_blank" rel="noopener"  (click)='clickShow(3)'>
       <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg> -->
 
-      <img src='assets/gift_2.png' height="32">
+      <img src="{{is_open[3]? 'assets/open.png' :'assets/gift_2.png'}}" height="32">
 
       <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>     -->
     </a>
 
-    <a class="card" target="_blank" rel="noopener">
-      <img src='assets/gift_2.png' height="32">
+    <a class="card" target="_blank" rel="noopener"  (click)='clickShow(4)'>
+      <img src="{{is_open[4]? 'assets/open.png' :'assets/gift_2.png'}}" height="32">
 
     </a>
 
   </div>
   <div class="card-container" *ngIf='is_show'>
-    <a class="card" target="_blank" rel="noopener">
+    <a class="card" target="_blank" rel="noopener"  (click)='clickShow(5)'>
       <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg> -->
 
-      <img src='assets/gift_2.png' height="32">
+      <img src="{{is_open[5]? 'assets/open.png' :'assets/gift_2.png'}}" height="32">
 
       <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>     -->
     </a>
 
-    <a class="card" target="_blank" rel="noopener">
-      <img src='assets/gift_2.png' height="32">
+    <a class="card" target="_blank" rel="noopener"  (click)='clickShow(6)'>
+      <img src="{{is_open[6]? 'assets/open.png' :'assets/gift_2.png'}}" height="32">
 
     </a>
 
-    <a class="card" target="_blank" rel="noopener">
-      <img src='assets/gift_2.png' height="32">
+    <a class="card" target="_blank" rel="noopener"  (click)='clickShow(7)'>
+      <img src="{{is_open[7]? 'assets/open.png' :'assets/gift_2.png'}}" height="32">
 
     </a>
-    <a class="card" target="_blank" rel="noopener">
-      <img src='assets/gift_2.png' height="32">
+    <a class="card" target="_blank" rel="noopener"  (click)='clickShow(8)'>
+      <img src="{{is_open[8]? 'assets/open.png' :'assets/gift_2.png'}}" height="32">
 
     </a>
   </div>
@@ -88,7 +88,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <iframe src="https://drive.google.com/file/d/1WTgwmUeUdb4wSYwZ1P7l_hK-3z__MT9z/preview" width="100%"
+        <iframe [src]="urlSafe" width="100%"
           height="480" allow="autoplay" allowfullscreen></iframe>
       </div>
     </div><!-- /.modal-content -->

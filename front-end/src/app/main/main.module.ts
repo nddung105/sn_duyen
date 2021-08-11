@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { BrowserModule } from '@angular/platform-browser';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import {FormsModule} from '@angular/forms';
 import {AlertModule} from 'ngx-bootstrap/alert';
@@ -13,6 +13,7 @@ import { MainComponent } from './main.component';
   imports: [
     CommonModule,
     ModalModule,
+    BrowserModule,
     FormsModule,
     AlertModule,
     TooltipModule
