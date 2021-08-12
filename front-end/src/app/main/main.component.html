@@ -1,6 +1,9 @@
 <div class="bg-image" style="
-      background-image: url('assets/background.jpg');
-      height: 100vh;">
+      background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2767aedc-6577-4f4e-bcbc-5c6db8ef9111/d6dugn9-35abbca2-6f5a-4e47-9fac-11748bc069ae.png/v1/fill/w_1024,h_576,strp/wallpaper_cute_monster__3_by_blacktoffee_d6dugn9-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvMjc2N2FlZGMtNjU3Ny00ZjRlLWJjYmMtNWM2ZGI4ZWY5MTExXC9kNmR1Z245LTM1YWJiY2EyLTZmNWEtNGU0Ny05ZmFjLTExNzQ4YmMwNjlhZS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.g62par20yrqnKOjEuAkodGEtI5RKFgaPckE32ivOQGY');
+      height: 100vh; background-size: contain;display: block;background-repeat: round;position: relative;background-attachment: fixed;
+
+
+">
 
 <div class=" border_wrapper animated fadeIn px-3" style="padding: 0px !important;" *ngFor="let alert of alerts">
   <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout" (onClosed)="onClosedAlert(alert)"><span
@@ -9,7 +12,7 @@
 
 <div class="content" role="main">
   <!-- Resources -->
-  <h1 style="font-weight: bold; color: rgb(216, 27, 27); font-family: cursive">Lê Mỹ Duyên</h1>
+  <h1 style="font-weight: bold; color: rgb(7, 87, 27); font-family: cursive">Lê Mỹ Duyên</h1>
   <h5 style="color: rgb(159, 161, 7); font-family: sans-serif">sweet 22 to ultraviolemon</h5>
   <div class="card-container">
     <input type='date' [(ngModel)]='date' style="font-size:18px;color: black;background: #ebedef;"/>
