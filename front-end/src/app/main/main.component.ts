@@ -26,7 +26,8 @@ export class MainComponent implements OnInit {
     'https://drive.google.com/file/d/1Us38VbSmdNhP1MZtY5A2lUL4pOfT6glU/preview',
     'https://drive.google.com/file/d/134tyV6DcAmC1Gelbgz751evdDGj8xoWv/preview',
     'https://drive.google.com/file/d/1Z3GwFEjyMRei-oZ0yd0w7tQNjrlQr1xG/preview',
-    'https://drive.google.com/file/d/16BkK03439aJXzXqiUERRaQO0AEGe4uB9/preview']
+    'https://drive.google.com/file/d/16BkK03439aJXzXqiUERRaQO0AEGe4uB9/preview',
+    'https://drive.google.com/file/d/15-Xr87CrDcw_Fl-3fhV0RoUVsCDt6u-z/preview']
   title = 'front-end';
   clickShow(index: number) {
     this.src_video = this.video_[index]

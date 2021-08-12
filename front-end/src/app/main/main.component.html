@@ -1,3 +1,7 @@
+<div class="bg-image" style="
+      background-image: url('assets/background.jpg');
+      height: 100vh;">
+
 <div class=" border_wrapper animated fadeIn px-3" style="padding: 0px !important;" *ngFor="let alert of alerts">
   <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout" (onClosed)="onClosedAlert(alert)"><span
       [innerHtml]="alert.msg"></span></alert>
@@ -68,6 +72,7 @@
 
     </a>
   </div>
+</div>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
